@@ -48,6 +48,24 @@ body {
     overflow: hidden;
 }
 
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 5%;
+    min-height: 20px;
+    width: 100%;
+    color: white;
+    text-align: right;
+}
+
+.credits-text {
+    padding-right: 10px;
+
+    text-decoration-line: none;
+    font-family: "JetBrains Mono", serif;
+    color: rgb(68, 68, 68);
+}
+
 .kingfish-logo {
     background-size: contain;
     background-repeat: no-repeat;
