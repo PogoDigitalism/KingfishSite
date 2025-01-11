@@ -2,7 +2,7 @@
 // let mouseOverContainer = document.getElementById("main");
 // let ex1Layer = document.getElementById("kingfish");
 
-// ex1Layer.style.transition = "transform 0.3s ease-out";
+// ex1Layer.style.transition = "transform 0.3s ease-out"; 
 
 // function transforms(x, y, el) {
 //     let box = el.getBoundingClientRect();
