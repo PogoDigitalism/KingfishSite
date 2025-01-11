@@ -23,3 +23,9 @@ body {
     height: 200px;
     display: block;
 }
+
+.bebas-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: white;
+}
