@@ -51,25 +51,12 @@ body {
 
 .rotate {
     display: inline-block;
-    transition: transform 0.5s ease, text-decoration-color 0.5s ease;
-
-    text-decoration-line: underline;
-    text-decoration-skip-ink: all;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 2px;
-    text-decoration-color: rgba(255, 214, 31, 0);
+    transition: transform 0.5s ease;
 }
-
-/* #our:hover,
-#games:hover {
-    transform: rotate(-15deg);
-    text-decoration-color: rgba(255, 214, 31, 1);
-} */
 
 #games:hover,
 #our:hover {
     transform: rotate(15deg);
-    /* text-decoration-color: rgba(255, 214, 31, 1); */
 }
 
 .footer {
@@ -78,13 +65,11 @@ body {
     height: 5%;
     min-height: 20px;
     width: 100%;
-    color: white;
     text-align: right;
 }
 
 .credits-text {
     padding-right: 10px;
-
     text-decoration-line: none;
     font-family: "JetBrains Mono", serif;
     color: rgb(68, 68, 68);
