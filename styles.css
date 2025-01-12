@@ -38,7 +38,7 @@ body {
 }
 
 .main {
-    width: 100%;
+    width: 60%;
     height: 100%;
 
     display: flex;
@@ -78,16 +78,17 @@ body {
 .kingfish-logo {
     background-size: contain;
     background-repeat: no-repeat;
-    width: auto;
-    height: 25%;
+    width: 90%;
+    max-width: 330px;
+
+    height: auto;
     display: block;
 }
 
 .bebas-text {
     text-decoration-line: none;
     font-family: "Luckiest Guy", serif;
-    /* font-family: 'Bebas Neue', sans-serif; */
-    font-size: 48px;
+    font-size: 40px;
     color: white;
 
     transition: 
@@ -104,7 +105,7 @@ body {
 .bebas-unavailable {
     text-decoration-line: none;
     font-family: "Luckiest Guy", serif;
-    font-size: 48px;
+    font-size: 40px;
     color: rgb(59, 59, 59);
 }
 
