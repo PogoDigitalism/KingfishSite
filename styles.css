@@ -16,25 +16,42 @@ body {
     overflow: hidden;
 }
 
-.svg-collection {
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-}
-
-.svg-object1 {
+.baller {
     position: fixed;
+    width: 30vw; 
+    max-width: 400px;
 
-    top: -55%;
-    left: 55%;
-    animation: rotationAnimR 20s linear infinite;
+    bottom:0%;
+    left: 0%;
+    filter:brightness(.9);
+    animation: hoverAnim1L 4s ease-in-out infinite;
 }
-.svg-object2 {
+.battler {
     position: fixed;
-    
-    top: 55%;
-    left: -55%;
-    animation: rotationAnimR 20s linear infinite;
+    width: 25vw; 
+    max-width: 350px;
+
+    bottom: 0%;
+    left: 7%;
+    filter:brightness(.9);
+    animation: hoverAnim1 4s ease-in-out infinite;
+}
+.cameraman {
+    position: fixed;
+    width: 20vw; 
+    max-width: 500px;
+
+    top: 12%;
+    right: 0%;
+    animation: hoverAnim 5s ease-in-out infinite;
+}
+.tvman {
+    position: fixed;
+    width: 25vw;
+    max-width: 500px;
+    top: 10%;
+    right: 0%;
+    animation: hoverAnimL 5s ease-in-out infinite;
 }
 
 .main {
@@ -71,7 +88,21 @@ body {
     padding-right: 10px;
     text-decoration-line: none;
     font-family: "JetBrains Mono", serif;
-    color: rgb(68, 68, 68);
+    opacity: 50%;
+    color: rgb(255, 255, 255);
+}
+
+.bg-render {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;         
+  height: 100vh;
+  object-fit: cover;    
+  object-position: center;
+  filter: blur(8px);
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .kingfish-logo {
@@ -106,8 +137,9 @@ body {
 .bebas-unavailable {
     text-decoration-line: none;
     font-family: "Luckiest Guy", serif;
+    opacity: 40%;
     font-size: 40px;
-    color: rgb(59, 59, 59);
+    color: rgb(255, 255, 255);
 }
 
 a.disabled {
@@ -115,20 +147,36 @@ a.disabled {
     cursor: default;
 }
 
-@keyframes rotationAnimL {
+@keyframes hoverAnim1 {
     0% {
-        rotate: 0deg;
+        bottom:0%;
+    }
+    50% {
+        bottom: 5%;
     }
     100% {
-        rotate: -180deg;
+        bottom: 0%;
+    }
+}
+@keyframes hoverAnim1L {
+    0% {
+        bottom:0%;
+    }
+    50% {
+        bottom: 7%;
+    }
+    100% {
+        bottom: 0%;
     }
 }
 
-@keyframes rotationAnimR {
-    0% {
-        rotate: 0deg;
-    }
-    100% {
-        rotate: 180deg;
-    }
+@keyframes hoverAnim {
+    0%   { top: 12%; }
+    50%  { top: 7%; }
+    100% { top: 12%; }
+}
+@keyframes hoverAnimL {
+    0%   { top: 10%; }
+    50%  { top: 7%; }
+    100% { top: 10%; }
 }
